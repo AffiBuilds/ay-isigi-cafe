@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ay Işığı Café</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <style>
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background-color: #f5efe6;
+            color: #766257;
+            text-align: center;
+            line-height: 1.6;
+        }
+         
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif;
+        }
+
+        header {
+            padding: 25px;
+            background-color: #2d241f;
+            color: white;
+        }
+
+        nav {
+            margin-top: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+            transition: 0.3s ease;
+        }
+
+        nav a:hover {
+             opacity: 0.7;
+       }
+
+        .hero {
+            padding: 100px 20px;
+        }
+
+        .hero h1 {
+            font-size: 70px;
+            margin-bottom: 30px;
+            letter-spacing: 2px;
+        }
+
+        .hero p {
+            font-size: 24px;
+        }
+
+        .hero img {
+            width: 80%;
+            max-width: 800px;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 20px;
+            margin-top: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+        } 
+
+        .button {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 14px 28px;
+            background-color: #8c5c35;
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            transition: 0.3s ease;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+        }
+        
+        .button:hover {
+            background-color: #7a5034;
+            transform: translateY(-3px);
+        }  
+         
+        .section {
+            padding: 80px 20px;
+        }
+
+        .cards {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background: white;
+            width: 220px;
+            padding: 25px;
+            border-radius: 15px;
+            transition: 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+
+        }
+
+        #faq .card {
+           max-width: 600px;
+           width: 90%;
+            margin: auto;
+        }
+
+        .price {
+            display: block;
+            margin-top: 15px;
+            font-size: 20px;
+             font-weight: 600;
+           color: #8c5c35;
+}
+
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+        }
+
+        footer {
+            padding: 25px;
+            background-color: #2d241f;
+            color: white;
+        }
+
+        @media (max-width: 600px) {
+
+       .hero h1 {
+            font-size: 42px;
+        }
+
+        .hero p {
+           font-size: 18px;
+        }
+      
+       .hero img {
+            width: 95%;
+            height: 250px;
+        }
+
+        nav a {
+           margin: 0 6px;
+        }
+
+       }
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h2>☾ Ay Işığı Café</h2>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#menu">Menu</a>
+            <a href="#reviews">Reviews</a>
+            <a href="#faq">FAQ</a>
+            <a href="#visit">Visit Us</a>
+        </nav>
+
+    </header>
+
+    <section class="hero" id="home">
+        <h1>Ay Işığı Café</h1>
+
+        <p>Good coffee. Slow moments. Beautiful memories.</p>
+        
+        <img src="cafe.jpg" alt="Ay Işığı Café">
+
+        <a href="#menu" class="button">Explore Our Menu</a>
+    </section>
+
+    <section class="section" id="menu">
+        <h2>Our Menu</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>☕ Turkish Coffee</h3>
+                <p>Rich, traditional and unforgettable.</p>
+                <span class="price">₹180</span>
+            </div>
+
+            <div class="card">
+                <h3>🍰 Homemade Desserts</h3>
+                <p>Sweet treats made with love.</p>
+                <span class="price">₹45</span>
+            </div>
+
+            <div class="card">
+                <h3>🥐 Fresh Pastries</h3>
+                <p>Freshly baked every morning.</p>
+                <span class="price">₹65</span>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="section" id="visit">
+
+    <h2>Visit Ay Işığı</h2>
+
+    <p>Come in, relax and enjoy your coffee.</p>
+
+   <p>
+    📍 <a href="https://www.google.com/maps/search/?api=1&query=Istanbul+Turkey" target="_blank">
+        Istanbul, Turkey
+    </a>
+   </p> 
+
+    <p>🕐 Open daily: 9:00 AM – 10:00 PM</p>
+
+    <p>📞 +91 733 822 3286</p>
+
+    <p>📧 hello@ayisigicafe.com</p>
+
+    <a href="tel:+917338223286" class="button">📞 Call Us</a>
+
+    <a href="https://wa.me/917338223286?text=Hi%20Ay%20I%C5%9F%C4%B1%C4%9F%C4%B1%20Caf%C3%A9%2C%20I%20would%20like%20to%20place%20a%20takeaway%20order." 
+   class="button" 
+   target="_blank">
+    🛍️ Order for Takeaway
+</a>
+
+    </section>
+    <section class="section" id="reviews">
+
+    <h2>What Our Customers Say</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>⭐️⭐️⭐️⭐️⭐️</h3>
+            <p>"The Turkish coffee was amazing! Such a cozy place."</p>
+            <strong>— Elif</strong>
+        </div>
+
+        <div class="card">
+            <h3>⭐️⭐️⭐️⭐️⭐️</h3>
+            <p>"Beautiful atmosphere and delicious homemade desserts."</p>
+            <strong>— Deniz</strong>
+        </div>
+
+        <div class="card">
+            <h3>⭐️⭐️⭐️⭐️⭐️</h3>
+            <p>"Perfect place to relax with friends. Loved it!"</p>
+            <strong>— Zeynep</strong>
+        </div>
+
+    </div>
+
+    </section>
+    <section class="section" id="faq">
+
+    <h2>Frequently Asked Questions</h2>
+
+    <div class="card">
+
+        <h3>Do you offer takeaway?</h3>
+        <p>Yes! You can place your takeaway order through WhatsApp.</p>
+
+        <h3>What time do you open?</h3>
+        <p>We are open daily from 9:00 AM to 10:00 PM.</p>
+
+        <h3>Do you have homemade desserts?</h3>
+        <p>Yes! We prepare fresh desserts every day.</p>
+
+    </div>
+
+</section>
+
+    <footer>
+        <p>© 2026 Ay Işığı Café</p>
+    </footer>
+
+</body>
+</html>
