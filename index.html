@@ -32,15 +32,15 @@
         }
 
         nav {
-            margin-top: 15px;
+            display: grid;
+            grid-template-columns: repeat(3, auto);
+            justify-content: center;
+            gap: 10px 15px;
         }
 
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 15px;
-            font-weight: 500;
-            transition: 0.3s ease;
+         nav a {
+             margin: 0;
+            font-size: 14px;
         }
 
         nav a:hover {
@@ -135,6 +135,26 @@
             color: white;
         }
 
+        .gallery {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+    }
+
+        .gallery img {
+            width: 250px;
+           height: 220px;
+           object-fit: cover;
+           border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
+            transition: 0.3s ease;
+   }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+    }
+
         @media (max-width: 600px) {
 
        .hero h1 {
@@ -151,7 +171,8 @@
         }
 
         nav a {
-           margin: 0 6px;
+           margin: 0;
+           font-size: 14px;
         }
 
        }
@@ -185,30 +206,102 @@
     </section>
 
     <section class="section" id="menu">
-        <h2>Our Menu</h2>
 
-        <div class="cards">
+    <h2>Our Menu</h2>
 
-            <div class="card">
-                <h3>☕ Turkish Coffee</h3>
-                <p>Rich, traditional and unforgettable.</p>
-                <span class="price">₹180</span>
-            </div>
+    <!-- COFFEE -->
+    <h3>☕ Coffee</h3>
 
-            <div class="card">
-                <h3>🍰 Homemade Desserts</h3>
-                <p>Sweet treats made with love.</p>
-                <span class="price">₹45</span>
-            </div>
+    <div class="cards">
 
-            <div class="card">
-                <h3>🥐 Fresh Pastries</h3>
-                <p>Freshly baked every morning.</p>
-                <span class="price">₹65</span>
-            </div>
-
+        <div class="card">
+            <h3>☕ Turkish Coffee</h3>
+            <p>Rich, traditional and perfectly aromatic.</p>
+            <span class="price">₹180</span>
         </div>
-    </section>
+
+        <div class="card">
+            <h3>☕ Cappuccino</h3>
+            <p>Perfectly creamy with a smooth finish.</p>
+            <span class="price">₹160</span>
+        </div>
+
+        <div class="card">
+            <h3>☕ Café Latte</h3>
+            <p>Silky milk and rich espresso.</p>
+            <span class="price">₹170</span>
+        </div>
+
+    </div>
+
+
+    <!-- DESSERTS -->
+    <h3>🍰 Desserts</h3>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>🍰 Baklava</h3>
+            <p>Sweet, flaky and traditionally inspired.</p>
+            <span class="price">₹140</span>
+        </div>
+
+        <div class="card">
+            <h3>🍰 Cheesecake</h3>
+            <p>Rich, creamy and freshly prepared.</p>
+            <span class="price">₹180</span>
+        </div>
+
+        <div class="card">
+            <h3>🍫 Chocolate Cake</h3>
+            <p>Decadent, soft and full of chocolate.</p>
+            <span class="price">₹160</span>
+        </div>
+
+    </div>
+
+
+    <!-- PASTRIES -->
+    <h3>🥐 Pastries</h3>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>🥐 Fresh Croissant</h3>
+            <p>Buttery, flaky and freshly baked.</p>
+            <span class="price">₹120</span>
+        </div>
+
+        <div class="card">
+            <h3>🥐 Cinnamon Roll</h3>
+            <p>Warm, soft and beautifully spiced.</p>
+            <span class="price">₹130</span>
+        </div>
+
+        <div class="card">
+            <h3>🧁 Fresh Muffin</h3>
+            <p>Soft, fluffy and freshly baked.</p>
+            <span class="price">₹100</span>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="section" id="gallery">
+
+    <h2>Gallery</h2>
+
+    <div class="gallery">
+
+        <img src="cafe.jpg" alt="Ay Işığı Café">
+        <img src="cafe-interior.jpg" alt="Cozy café interior">
+        <img src="coffee.jpg" alt="Fresh coffee">
+        <img src="dessert.jpg" alt="Delicious dessert">
+
+    </div>
+
+</section>
 
     <section class="section" id="visit">
 
@@ -234,7 +327,14 @@
    class="button" 
    target="_blank">
     🛍️ Order for Takeaway
-</a>
+  
+    <a href="https://wa.me/917338223286?text=Hello%20Ay%20I%C4%B1%C5%9F%C4%B1%C4%9F%C4%B1%20Caf%C3%A9%2C%20I%20would%20like%20to%20reserve%20a%20table.%0A%0AName%3A%0ADate%3A%0ATime%3A%0ANumber%20of%20guests%3A"
+   target="_blank"
+   class="button">
+    📅 Reserve a Table
+   </a>
+     
+    
 
     </section>
     <section class="section" id="reviews">
